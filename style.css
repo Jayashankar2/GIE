@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    font-size: 0.99em;
+}
+header nav{
+    padding: 1em;
+    margin: 0 5em;
+    display: flex;
+    justify-content: space-between;
+}
+header nav > img{
+    cursor: pointer;
+}
+.search_bar{
+    display: inline-flex;
+    vertical-align: center;
+    padding: 0.5em 1.2em;
+    border-radius: 30px;
+    background-color: aliceblue;
+    vertical-align: center;
+}
+.search_bar input{
+    border: none;
+    outline: none;
+    font-size: 0.85em;
+    width: 25em;
+    background: none;
+}
+.search_bar a{
+    margin-top: 4px;
+}
+.search_bar a img{
+    height: 15px;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+ul li{
+    padding: 0.5em 1.5em;
+    transition: 1s;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.login{
+    padding: 0.5em 2em;
+    background: #ff0249;
+    color: white;
+    transition: 0.5s;
+}
+.login:hover{
+    background: #c80039;
+}
+
+.hero{
+    padding: 6em 5em;
+    background: url(images/hero.jpg);
+    background-size: cover;
+}
+.hero h1{
+    font-size: 7em;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: -5px;
+    line-height: 0.9em;
+    animation: textanim1 1s;
+}
+@keyframes textanim1 {
+    from{
+        transform: translateX(-1000px);
+    }
+    to{
+        transform: 0;
+    }
+}
+.hero p{
+    margin: 1em 0 3em 0;
+    color: #fff;
+    animation: textanim2 1.5s;
+}
+@keyframes textanim2{
+    from{
+        transform: translateX(-1000px);
+    }
+    to{
+        transform: 0;
+    }
+}
+.hero a{
+    padding: 1em 2em;
+    background: #ff0249;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: 0.5s;
+}
+.hero a:hover{
+    background: #c80039;
+}
+
+/*****************SEC1**********/
+
+.sec1{
+    padding: 6em 5em;
+    display: flex;
+    justify-content: space-between;
+}
+.sec1 div{
+    margin-top: 12em;
+}
+.sec1 div h1{
+    font-size: 8em;
+    letter-spacing: -5px;
+    line-height: 0.9em;
+    color: #ff0249;
+}
+.sec1 div h1 span{
+    color: #000249;
+}
+.sec1 div p{
+    margin: 1em 0;
+}
+.sec1 div a{
+    margin-top: 1em;
+    text-decoration: none;
+    color: #ff0249;
+    font-weight: 700;
+}
+.sec1 > img{
+    transition: 2s;
+    transform: scale(90%);
+}
+.sec1 > img:hover{
+    transform: scale(100%);
+    filter: drop-shadow(8px 8px 10px gray) hue-rotate(360deg);
+}
+
+
+/*****************SEC2**********/
+
+.sec2{
+    padding: 6em 5em;
+    display: flex;
+    justify-content: space-between;
+    background: #000120;
+}
+.sec2 div{
+    margin-top: 12em;
+    margin-left: 3em;
+}
+.sec2 div h1{
+    font-size: 8em;
+    letter-spacing: -5px;
+    line-height: 0.96em;
+    color: #ff0249;
+}
+.sec2 div h1 span{
+    color: #fff;
+}
+.sec2 div p{
+    margin: 1em 0;
+    color: #fff;
+}
+.sec2 div a{
+    margin-top: 1em;
+    text-decoration: none;
+    color: #ff0249;
+    font-weight: 700;
+}
+.sec2 > img{
+    transform: scale(90%);
+    transition: 2s;
+}
+.sec2 > img:hover{
+    transform: scale(100%);
+    filter: hue-rotate(360deg);
+}
+
+
+/*****************SEC3**********/
+
+.sec3{
+    padding: 6em 5em;
+    display: flex;
+    justify-content: space-between;
+}
+.sec3 div{
+    margin-top: 12em;
+}
+.sec3 div h1{
+    font-size: 8em;
+    letter-spacing: -5px;
+    line-height: 0.9em;
+    color: #ff0249;
+}
+.sec3 div h1 span{
+    color: #000249;
+}
+.sec3 div p{
+    margin: 1em 0;
+}
+.sec3 div a{
+    margin-top: 1em;
+    text-decoration: none;
+    color: #ff0249;
+    font-weight: 700;
+}
+.sec3 > img{
+    transform: scale(90%);
+    transition: 2s;
+}
+.sec3 > img:hover{
+    transform: scale(100%);
+    filter: drop-shadow(8px 8px 10px gray) hue-rotate(360deg);
+}
+
+
+/**********************BANNER**********************/
+.banner{
+    background-image: url(images/banner.png);
+    background-size: cover;
+    text-align: center;
+    padding: 6em 5em;
+}
+.banner p{
+    margin: 1em 0 2em 0;
+    color: white;
+    font-size: 1.2em;
+}
+.banner a{
+    padding: 1em 2em;
+    background: #ff0249;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+
+/***************TRENDING****************/
+.trending{
+    padding: 8em 5em 6em 5em;
+    text-align: center;
+}
+.trending h1{
+    font-size: 4em;
+    letter-spacing: -5px;
+    line-height: 0.9em;
+    color: #ff0249;
+}
+.trending h1 span{
+    color: #000249;
+}
+.trending .slider{
+    margin-top: 5em;
+    display: block;
+}
+.trending div .gameimage{
+    border-radius: 20px;
+    border: 7px solid black;
+    box-shadow: 0 0 25px black;
+    width: 50em;
+}
+.trending div .left{
+    margin: 0 6em 12em 0;
+    width: 2em;
+}
+.trending div .right{
+    margin: 0 0 12em 6em;
+    width: 2em;
+}
+.cta{
+    margin-top: 1em;
+}
+.cta button{
+    margin: 1em;
+    padding: 1em 2em;
+    text-decoration: none;
+    color: #fff;
+    outline: none;
+    border: none;
+    text-align: center;
+}
+.wishlist{
+    background: #000249;
+}
+.cart{
+    background: #ff0249;
+}
+.cta button img{
+    margin: -0.3em 0 -0.3em 1em;
+    width: 1.5em;
+}
+.cta button span{
+    font-size: 1.2em;
+    margin: 0.5em;
+}
+
+/**************STAY UPDATE*******************/
+.stayupdate{
+    padding: 8em 5em;
+    background: url(images/update.png);
+    background-size: cover;
+}
+.stayupdate > div{
+    padding: 4em;
+    background: linear-gradient(to right bottom, rgb(255, 255, 255, 30%),rgb(255, 255, 255, 10%));
+    backdrop-filter: blur(4px);
+    border-radius: 20px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    /* border-image: linear-gradient(#f6b73c, #4d9f0c) 30; */
+    width: 45em;
+}
+.stayupdate > div > h1{
+    font-size: 5em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: -5px;
+    line-height: 0.9em;
+}
+.stayupdate > div > p{
+    margin-top: 0.5em;
+    color: #fff;
+}
+.stayupdate > div > div{
+    margin-top: 2em;
+    padding: 1em 1.2em;
+    display: flex;
+    background: white;
+    width: 35em;
+}
+.stayupdate > div > div img{
+    margin-top: 0.08em;
+    height: 1em;
+}
+.stayupdate > div > div input{
+    margin-left: 1em;
+    outline: none;
+    border: none;
+    background: none;
+    width: 35em;
+}
+.stayupdate > div > button{
+    margin-top: 0.7em;
+    padding: 0.5em 1em;
+    background: #ff0249;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+/**************FOOTER**************/
+.footer{
+    padding: 6em 5em;
+    background: url(images/blend.png);
+    background-size: cover;
+    text-align: center;
+}
+.footer h1{
+    font-size: 2em;
+    color: #fff;
+}
+.socials{
+    margin-top: 5em;
+    padding: 0 20em;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: center;
+}
+.socials img{
+    transition: 0.3s;
+}
+.socials img:hover{
+    transform: scale(120%);
+}
+.links{
+    margin-top: 4em;
+    color: #fff;
+    text-align: left;
+}
+.links > div{
+    padding: 3em;
+    display: flex;
+    justify-content: space-between;
+}
+.links > div > div > p{
+    padding: 0.2em 0;
+    font-weight: 600;
+    font-size: 1.5em;
+    border-bottom: 2px solid #fff;
+}
+.links > div > div > div{
+    margin-top: 2em;
+}
+.links > div > div > div > p{
+    margin-top: 1em;
+    font-size: 1.3em;
+}
+.links > div > div > div a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.2s;
+}
+.links > div > div > div a:hover{
+    color: #ff0249;
+}
